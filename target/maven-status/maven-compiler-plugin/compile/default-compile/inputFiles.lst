@@ -1,8 +1,0 @@
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\filters\AdminAuthorizationFilter.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\ApiGatewayApplication.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\logoutToken\TokenRepository.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\logoutToken\TokenType.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\filters\UserAuthorizationFilter.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\logoutToken\Token.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\logoutToken\JwtService.java
-C:\Users\Vini\IdeaProjects\internbooks\api-gateway\src\main\java\com\example\apigateway\filters\LogoutFilter.java
