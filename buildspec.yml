@@ -14,8 +14,8 @@ phases:
         - echo Success
 env:
   variables:
-    USERNAME: ${USERNAME}
-    ANOTHER_ENV_VARIABLE: ${PASSWORD}
+    USERNAME: USERNAME
+    PASSWORD: PASSWORD
 
 artifacts:
     files:
