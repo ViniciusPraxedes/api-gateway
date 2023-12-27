@@ -3,9 +3,7 @@ version: 0.2
 phases:
     pre_build:
       commands:
-        - export USERNAME=${USERNAME}
-        - export PASSWORD=${PASSWORD}
-        - echo ${USERNAME}
+
     build:
       commands:
         - mvn clean package
@@ -14,7 +12,7 @@ phases:
         - echo Success
 env:
   variables:
-    USERNAME: USERNAME
+    USERNAME: "USERNAME"
     PASSWORD: PASSWORD
 
 artifacts:
