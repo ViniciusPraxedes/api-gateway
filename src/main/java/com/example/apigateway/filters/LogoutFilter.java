@@ -38,8 +38,6 @@ public class LogoutFilter extends AbstractGatewayFilterFactory<LogoutFilter.Conf
     @Override
     public GatewayFilter apply(Config config) {
 
-        System.out.println("Logout filter is being executed");
-
         return (exchange, chain) -> {
 
             //Get request

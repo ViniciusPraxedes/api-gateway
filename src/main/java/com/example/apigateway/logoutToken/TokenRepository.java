@@ -14,8 +14,6 @@ import java.util.Optional;
 public interface TokenRepository extends JpaRepository<Token, Integer> {
     Optional<Token>findByToken(String token);
 
-
-
     @Modifying
     @Query("UPDATE Token t " +
             "SET t.revoked = true, t.expired = true " +

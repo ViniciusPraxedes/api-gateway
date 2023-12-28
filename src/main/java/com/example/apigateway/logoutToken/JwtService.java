@@ -56,40 +56,4 @@ public class JwtService {
         }
         return false;
     }
-
-    private boolean isJwtValid(String jwt) {
-        boolean returnValue = true;
-
-        String subject = String.valueOf(extractAllClaims(jwt));
-
-
-        try {
-
-            System.out.println(subject);
-            System.out.println(extractAllClaims(jwt));
-
-            boolean invalid = (boolean) extractAllClaims(jwt).get("invalid");
-            System.out.println(invalid);
-            String authority = (String) extractAllClaims(jwt).get("authority");
-            System.out.println(authority);
-            if (authority.equals("[USER]")){
-                System.out.println("it is a user");
-            }
-
-
-
-        } catch (Exception ex) {
-            returnValue = false;
-        }
-
-        if (subject == null || subject.isEmpty()) {
-            returnValue = false;
-        }
-
-        return returnValue;
-    }
-
-
-
-
 }
