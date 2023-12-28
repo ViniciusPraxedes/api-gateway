@@ -5,7 +5,6 @@ phases:
       commands:
         - export USERNAME=${USERNAME}
         - export PASSWORD=${PASSWORD}
-        - echo ${USERNAME}
     build:
       commands:
         - mvn clean package

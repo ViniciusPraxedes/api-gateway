@@ -17,6 +17,7 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.server.ServerWebExchange;
 
@@ -24,6 +25,7 @@ import reactor.core.publisher.Mono;
 
 @Component
 @Transactional
+@CrossOrigin("*")
 public class UserAuthorizationFilter extends AbstractGatewayFilterFactory<UserAuthorizationFilter.Config> {
 
 	@Autowired
