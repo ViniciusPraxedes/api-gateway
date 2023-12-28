@@ -1,2 +1,4 @@
-package com.example.apigateway.config;public class SecurityConfig {
+package com.example.apigateway.config;
+
+public class SecurityConfig {
 }
