@@ -37,8 +37,11 @@ public class LogoutFilter extends AbstractGatewayFilterFactory<LogoutFilter.Conf
 
     @Override
     public GatewayFilter apply(Config config) {
+        System.out.println("Running logout");
 
         return (exchange, chain) -> {
+
+            System.out.println("Triggered");
 
             //Get request
             ServerHttpRequest request = exchange.getRequest();
@@ -50,6 +53,8 @@ public class LogoutFilter extends AbstractGatewayFilterFactory<LogoutFilter.Conf
 
             //Extract auth header from request;
             String authorizationHeader = Objects.requireNonNull(request.getHeaders().get(HttpHeaders.AUTHORIZATION)).get(0);
+
+            System.out.println(authorizationHeader);
 
             //Extract the jwt from the auth header
             String jwt = authorizationHeader.replace("Bearer ", "");
